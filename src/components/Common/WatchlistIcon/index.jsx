@@ -5,6 +5,7 @@ import addToWatchlist from '../../../functions/addToWatchlist';
 import removeFromWatchlist from '../../../functions/removeFromWatchlist';
 import { useContext, useState } from 'react';
 import { WatchlistContext } from '../../../context/WatchlistContext';
+import { Tooltip } from "@mui/material";
 
 const WatchlistIcon = ({ id, price_change_percentage_24h, gridView }) => {
     const { toggle, setToggle } = useContext(WatchlistContext);
@@ -31,17 +32,21 @@ const WatchlistIcon = ({ id, price_change_percentage_24h, gridView }) => {
         <>
             {
                 JSON.parse(localStorage.getItem("watchlist")).includes(id) ?
-                    <StarRoundedIcon
-                        style={style}
-                        onClick={(e) => { e.preventDefault(); handleWatchList(id, "remove"); }}
-                        className={`watchlist-icon ${price_change_percentage_24h < 0 && "watchlist-icon-red"}`}
-                    />
+                    <Tooltip placement="bottom-start" title="Added In Watchlist">
+                        <StarRoundedIcon
+                            style={style}
+                            onClick={(e) => { e.preventDefault(); handleWatchList(id, "remove"); }}
+                            className={`watchlist-icon ${price_change_percentage_24h < 0 && "watchlist-icon-red"}`}
+                        />
+                    </Tooltip>
                     :
-                    <StarBorderRoundedIcon
-                        style={style}
-                        onClick={(e) => { e.preventDefault(); handleWatchList(id, "add"); }}
-                        className={`watchlist-icon ${price_change_percentage_24h < 0 && "watchlist-icon-red"}`}
-                    />
+                    <Tooltip placement="bottom-start" title="Add To Watchlist">
+                        <StarBorderRoundedIcon
+                            style={style}
+                            onClick={(e) => { e.preventDefault(); handleWatchList(id, "add"); }}
+                            className={`watchlist-icon ${price_change_percentage_24h < 0 && "watchlist-icon-red"}`}
+                        />
+                    </Tooltip>
             }
         </>
     )

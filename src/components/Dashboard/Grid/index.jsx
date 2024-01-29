@@ -27,9 +27,7 @@ const Grid = ({ coin, delay }) => {
                         </Tooltip>
                         <p>{coin.name}</p>
                     </div>
-                    <Tooltip placement="bottom-start" title="Add To Watchlist">
-                        <WatchlistIcon id={coin.id} price_change_percentage_24h={coin.price_change_percentage_24h} gridView={true} />
-                    </Tooltip>
+                    <WatchlistIcon id={coin.id} price_change_percentage_24h={coin.price_change_percentage_24h} gridView={true} />
                 </div>
 
                 <Tooltip placement="bottom-start" title="Price changes percentage in 24h">

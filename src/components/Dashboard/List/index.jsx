@@ -70,11 +70,10 @@ const List = ({ coin, delay }) => {
                     </td>
                 </Tooltip>
 
-                <Tooltip placement="bottom-start" title="Add To Watchlist">
-                    <td className="watchlist-td">
-                        <WatchlistIcon id={coin.id} price_change_percentage_24h={coin.price_change_percentage_24h} gridView={false} />
-                    </td>
-                </Tooltip>
+
+                <td className="watchlist-td">
+                    <WatchlistIcon id={coin.id} price_change_percentage_24h={coin.price_change_percentage_24h} gridView={false} />
+                </td>
             </motion.tr>
         </NavLink>
     )
