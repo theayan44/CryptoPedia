@@ -10,7 +10,7 @@ const Button = ({ text, outlineButton }) => {
                     <RWebShare
                         data={{
                             text: "Crypto Tracker Website for Tracking Current Markets of Crypto Currencies.",
-                            url: "https://www.youtube.com",
+                            url: "https://cryptopedia-ayan.netlify.app/",
                             title: "CryptoTracker.",
                         }}
                     >
