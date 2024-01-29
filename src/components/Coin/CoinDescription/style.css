@@ -1,0 +1,48 @@
+.coin-name {
+    margin: 0 1.2rem;
+    color: var(--yellow);
+}
+
+.coin-desc {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+.coin-desc>a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.coin-desc>a:hover {
+    color: var(--yellow);
+    transition: all 0.3s;
+}
+
+.read-more {
+    margin-left: 1rem;
+    width: fit-content;
+    color: var(--grey);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    color: var(--white);
+}
+
+@media only screen and (max-width: 400px) {
+    .coin-name {
+        font-size: 1.2rem;
+    }
+
+    .coin-desc {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .read-more {
+        font-size: 0.8rem;
+    }
+}

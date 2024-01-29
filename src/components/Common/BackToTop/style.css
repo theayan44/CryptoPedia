@@ -1,0 +1,26 @@
+.back-to-top-btn {
+    display: none;
+    /* change to flex */
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--yellow);
+    color: var(--darkgrey);
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: 2px solid var(--yellow);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top-btn:hover {
+    background-color: var(--darkgrey);
+    color: var(--white);
+}
+
+.back-to-top-btn>* {
+    scale: 1.2;
+}

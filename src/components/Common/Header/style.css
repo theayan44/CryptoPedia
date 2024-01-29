@@ -1,0 +1,115 @@
+.header {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links>a {
+    color: var(--grey);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.links>a:hover {
+    color: var(--white);
+}
+
+.mobile-drawer {
+    display: none;
+}
+
+.drawer-links {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .links {
+        display: none;
+    }
+
+    .mobile-drawer {
+        display: block;
+    }
+
+    .menu-icon {
+        color: var(--yellow);
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+
+    .drawer-links {
+        min-width: 40vw;
+        display: block;
+        height: 100vh;
+        background-color: var(--yellow);
+        padding: 1rem 1.5rem;
+    }
+
+    .drawer-links>hr {
+        border: 0.5px solid var(--grey);
+    }
+
+    .drawer-links .link {
+        color: var(--black);
+        font-weight: 600;
+        transition: all 0.3s;
+
+    }
+
+    .drawer-links .link:hover {
+        color: var(--grey);
+    }
+
+    .drawer-links>a:last-child>button {
+        margin-top: 0.6rem;
+        margin-left: -5px;
+        border: 2px solid var(--black);
+    }
+
+    /* hover effect of above button done in Button Component css */
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        padding: 0 2rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+
+}

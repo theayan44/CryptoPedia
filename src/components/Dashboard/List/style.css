@@ -1,0 +1,283 @@
+.list-row {
+    /* background-color: var(--darkgrey) !important; */
+}
+
+.list-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.list-row:hover {
+    background-color: var(--darkgrey) !important;
+    border-radius: 1rem !important;
+
+}
+
+.list-row>td {
+    width: 18%;
+}
+
+.logo-td {
+    width: fit-content !important;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.info-td>h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.info-td>p {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+.price-change-td {
+    /* width: 100% !important; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price-change-td>* {
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.price-change-td-red>* {
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+.price-change-td>h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    min-width: 95px;
+}
+
+.icon-trending {
+    font-size: 2.5rem !important;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0.35rem;
+}
+
+.current-price-td {
+    text-align: center;
+    color: var(--green);
+    font-size: 1rem;
+}
+
+.current-price-td-red {
+    color: var(--red);
+}
+
+.volume-td,
+.market-cap-td {
+    /* text-align: center; */
+    font-size: 1.2rem;
+}
+
+.mobile-td {
+    display: none;
+}
+
+.watchlist-td {
+    width: fit-content !important;
+    margin-right: 2rem;
+    padding-right: 10px;
+    justify-content: left;
+}
+
+@media only screen and (max-width: 1200px) {
+    .icon-trending {
+        display: none !important;
+    }
+
+    .current-price-td,
+    .volume-td,
+    .market-cap-td {
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .info-td>h3 {
+        font-size: 1rem;
+    }
+
+    .price-change-td>h4 {
+        font-size: 0.9rem;
+        padding: 0.5rem !important;
+    }
+
+    .desktop-td {
+        display: none;
+    }
+
+    .mobile-td {
+        display: block;
+    }
+
+    .current-price-td,
+    .volume-td,
+    .market-cap-td {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .watchlist-td {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo-td {
+        width: 0px !important;
+    }
+
+    .logo {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .info-td {
+        width: 25% !important;
+    }
+
+    .info-td>h3 {
+        font-size: 0.8rem;
+    }
+
+    .info-td>p {
+        font-size: 0.6rem;
+    }
+
+    .price-change-td>h4 {
+        font-size: 0.7rem;
+        padding: 0.5rem 0 !important;
+        min-width: 60px !important;
+    }
+
+    .current-price-td,
+    .volume-td,
+    .market-cap-td {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .watchlist-td * {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .list-row {
+        gap: 0;
+    }
+
+    .logo {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .info-td {
+        width: 20% !important;
+    }
+
+    .info-td>h3 {
+        font-size: 0.6rem;
+    }
+
+    .info-td>p {
+        font-size: 0.4rem;
+    }
+
+    .price-change-td>h4 {
+        font-size: 0.4rem;
+        padding: 0.1rem !important;
+        min-width: 30px !important;
+        border-width: 1px;
+    }
+
+    .current-price-td h3 {
+        font-size: 0.55rem;
+        font-weight: 400 !important;
+        text-align: left;
+    }
+
+    .volume-td,
+    .market-cap-td {
+        text-align: center;
+        font-size: 0.55rem;
+        font-weight: 300 !important;
+    }
+
+    .watchlist-td * {
+        padding: 0px;
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .info-td {
+        width: 25% !important;
+    }
+
+    .info-td>h3 {
+        font-size: 0.6rem;
+    }
+
+    .info-td>p {
+        font-size: 0.4rem;
+    }
+
+    .price-change-td {
+        display: none;
+    }
+
+    .current-price-td h3 {
+        font-size: 0.55rem;
+        font-weight: 400 !important;
+        text-align: left;
+    }
+
+    .volume-td,
+    .market-cap-td {
+        text-align: center;
+        font-size: 0.55rem;
+        font-weight: 300 !important;
+    }
+
+    .watchlist-td {
+        display: none;
+    }
+}

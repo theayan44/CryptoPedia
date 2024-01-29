@@ -1,0 +1,113 @@
+.single-grid {
+    width: 300px;
+    height: fit-content;
+    background-color: var(--darkgrey);
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+    padding-right: 0;
+    border: 2px solid var(--darkgrey);
+    border-radius: 1rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    transform: none;
+}
+
+.single-grid:hover {
+    border-color: var(--green);
+    transform: scale(1.05);
+}
+
+.single-grid-red:hover {
+    border-color: var(--red);
+}
+
+.coin-details {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.coin-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.coin-info>* {
+    margin: 0;
+}
+
+.coin-info>h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.coin-info>p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--white);
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.price-change {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price-change>* {
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.price-change-red>* {
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+.price-change>h4 {
+    padding: 0.5rem 1rem;
+    min-width: 95px;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.trending-icon {
+    font-size: 2.5rem !important;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0.35rem;
+}
+
+.market-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--green);
+    margin-top: 0;
+}
+
+.market-price-red {
+    color: var(--red);
+}
+
+.total-volumn,
+.market-cap {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--white);
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 320px) {
+
+    .total-volumn,
+    .market-cap {
+        font-size: 0.66rem
+    }
+}

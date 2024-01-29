@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #111;
+    --blue: #3a80e9;
+    --grey: #888;
+    --darkgrey: #1b1b1b;
+    --green: #61c96f;
+    --red: #f94141;
+    --yellow: #fff200;
+    /* --yellow: #ffde05; --> for light theme */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    /* height: 200vh; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cursor {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    background-color: var(--yellow);
+    z-index: 10000;
+    border: 2px solid var(--yellow);
+    height: 0.3rem;
+    width: 0.3rem;
+    border-radius: 50%;
+    transition: all 200ms ease-out;
+}
+
+.cursor-pointer {
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    background-color: transparent;
+    z-index: 10000;
+    border: 2px solid var(--yellow);
+    height: 2rem;
+    width: 2rem;
+    transition: all 400ms ease-out;
+}
+
+.grey-wrapper {
+    display: block;
+    width: 93%;
+    margin: 1rem auto;
+    background-color: var(--darkgrey);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.filter-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .filter-div {
+        gap: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .filter-div {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .filter-div {
+        margin-top: 0.5rem;
+    }
+}
+
+a {
+    color: inherit;
+}
+
+.links .active {
+    color: var(--yellow) !important;
+}
+
+.links .active:hover {
+    color: var(--white) !important;
+}
+
+/* custom selecton */
+::selection {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+/* scrollbar background on which it moves */
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* the main scroll */
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+/*
+.list-row {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--darkgrey);
+}
+
+td {
+    width: 18%;
+    text-align: left !important;
+    min-width: 0;
+}
+
+.coin-logo-div {
+    width: fit-content !important;
+    min-width: 0;
+}
+
+.coin-info-td>* {
+    margin: 0;
+}
+
+.coin-info-td>h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.coin-info-td>p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--white);
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.price-change-td {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-change-td>* {
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.price-change-td-red>* {
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+.price-change-td>h4 {
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.trending-icon {
+    font-size: 2.5rem !important;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0.35rem;
+}
+*/

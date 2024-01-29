@@ -1,0 +1,17 @@
+.select-type-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .select-type-button * {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .select-type-button * {
+        font-size: 0.6rem !important;
+    }
+}

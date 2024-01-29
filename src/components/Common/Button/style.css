@@ -1,0 +1,36 @@
+.btn {
+    background-color: var(--yellow);
+    color: var(--black);
+    border: 1px solid var(--yellow);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    min-width: 9rem;
+    border-radius: 3rem;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 15px rgba(255, 242, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--yellow);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    min-width: 9rem;
+    border-radius: 3rem;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+    cursor: pointer;
+}

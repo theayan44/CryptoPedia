@@ -1,0 +1,13 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-loader {
+    color: var(--yellow) !important;
+}

@@ -1,0 +1,5 @@
+.chart {
+    width: 100% !important;
+    height: calc(93vw * 0.43) !important;
+    margin-top: 2rem;
+}
